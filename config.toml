@@ -1,0 +1,157 @@
+# Site settings
+baseurl = "/"
+languageCode = "en-us"
+title = "pauloc.net"
+theme = "hugo-highlights-theme"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# Enter your tracking code to enable Google analytics
+# googleAnalytics = ""
+
+[params]
+
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "PauloC"
+  description = "pauloc"
+
+  # For a static site it's not possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitors can send up to a 1000 emails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email from www.formspree.io
+  # - That's all. Enjoy mailing!
+  email = "pauloalvescosta@protonmail.com"
+
+  # If this param is set to true, every section gets an own background image (located at static/images)
+  # to change the image you could use the param picture on every section.
+  # If it's disabled you could change the background to overwrite the bg.png and overlay.png to set the background.
+  backgroundpersection = true
+
+  # hero Section
+  [params.hero]
+    type = "hero"
+    title = "pauloC.net"
+    description = "nerd pesquisador"
+    buttontext = "<>"
+
+  # about section
+  [[params.block]]
+    id = "about"
+    type = "text"
+    title = "Quem é pauloC?"
+    description = "Entusiasta de tecnologias, sistemas e documentações abertas tais como GNU/Linux, Linux, FreeBSD, Symless-Synergy, Blockchains, BOINC, Gridcoin, JAMStack, tomatoUSB, openWRT, dd-WRT, PfSense dentre outras."
+    buttontext = "next"
+    # the picture is storead at static/images/
+    picture = "pic01.jpg"
+
+  # skill section
+  [[params.block]]
+    id = "skills"
+    type = "list"
+    title = "Coisas que eu faço"
+    description = "ou pelas quais me interesso:"
+    buttontext = "next"
+    # the picture is storead at static/images/
+    picture = "pic02.jpg"
+
+    [[params.block.item]]
+      icon = "fa-cogs"
+      title = "ajustes de rede"
+
+    [[params.block.item]]
+      icon = "fa-youtube"
+      title = "videos"
+
+    [[params.block.item]]
+      icon = "fa-code"
+      title = "sites estáticos"
+
+    [[params.block.item]]
+      icon = "fa-wifi"
+      title = "otimização de wifi"
+
+  # infos section
+  [[params.block]]
+    id = "infos"
+    type = "text"
+    title = "antes de você ir embora"
+    description = "Tenho ampla experiência em suporte a usuários avançados consolidada em empresas como: [6D Estúdio](http://6d.com.br/), [Tátil Design de Idéias](http://tatil.com.br/pb/) e [GloboSat Programadora](http://canaisglobosat.globo.com/). </br> Também faço restauração de computadores, consultoria em redes, testes, otimização de servidores, backups, loadbalancing e failsafe de conexões WAN. Alguns desses processos estão ou estarão disponíveis no [youTube](https://www.youtube.com/watch?v=_G79P7KthZo&list=PLukehdAOnCOcj53_GVmuw0TF88u_EUuVb). </br> Atualmente desenvolvo as seguintes iniciativas: a [salaDeMaquinas.TV](https://salademaquinas.tv/) e a [bricolagemAbstrata.com](https://bricolagemabstrata.com/). <br> Atualmente busco vaga em Desenvolvimento FrontEnd."
+    # the picture is storead at static/images/
+    picture = "pic03.jpg"
+
+#  # custom section
+#  [[params.block]]
+#    id = "important"
+#    # to make custom section copy <theme>/layouts/partials/text.html to /layouts/partials/custom.html and edit it according to your needs.
+#    type = "custom"
+#    title = "Don't forget"
+#    description = "Curabitur massa ante, semper at massa et, semper pellentesque velit. Duis tempor est nisi, a gravida risus malesuada eget. Nunc rutrum arcu laoreet mauris sodales vehicula. Nunc iaculis felis ac dui egestas, vel ullamcorper tellus bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia sem porttitor, fringilla metus at, convallis quam. Integer convallis a justo non pellentesque."
+#    # the picture is storead at static/images/
+#    picture = "pic04.jpg"
+
+  # contact form
+  [[params.block]]
+    id = "contact"
+    type = "contact"
+    title = "correio eletrônico"
+    picture = "pic05.jpg"
+
+    [params.block.form]
+      name = "Nome"
+      email = "Email"
+      message = "Mensagem"
+      buttontext = "agradeço o interesse"
+
+  # footer section
+  # this section includes last block and social icons
+
+  [params.footer]
+    enable = true
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Twitter"
+        icon = "fa-twitter"
+        link = "https://twitter.com/lopaulo"
+
+      [[params.footer.social]]
+        title = "Facebook"
+        icon = "fa-facebook"
+        link = "https://www.facebook.com/l0paul0"
+
+      [[params.footer.social]]
+        title = "Instagram"
+        icon = "fa-instagram"
+        link = "https://www.instagram.com/l0paul0/"
+
+      [[params.footer.social]]
+        title = "Linkedin"
+        icon = "fa-linkedin"
+        link = "https://www.linkedin.com/in/pauloalvescosta/"
+
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "© pauloc.net"
+
+      [[params.footer.copyright.notice]]
+        text = "Design: [HTML5UP](//html5up.net)"
+
+#      [[params.footer.copyright.notice]]
+#        text = "Demo Images: [Unsplash](//unsplash.com/)"
