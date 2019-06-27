@@ -1,5 +1,5 @@
 # Site settings
-baseurl = ""
+baseurl = "https://pauloc.net/"
 languageCode = "en-us"
 title = "pauloc.net"
 theme = "hugo-highlights-theme"
